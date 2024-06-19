@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Masego Motitswe - Personal Webpage",
+  "bodyFont": "Arial",
+  "headerFont": "Poppins",
+  "backgroundImageUrl": "https://st.depositphotos.com/1010613/61658/i/450/depositphotos_616580442-stock-photo-computer-programmer-writing-program-code.jpg",
+  "textColor": "#fff",
+  "headerColor": "#fff",
+  "highlightColor": "#ffcc00",
+  "tableTextColor": "#000",
+  "tableHeaderColor": "#000",
+  "subjectTextColor": "#000",
+  "title": "Welcome to My Basic Website",
+  "header": "Masego Motitswe",
+  "name": "Masego Motitswe",
+  "introImage": "https://lh3.googleusercontent.com/a/ACg8ocIghaX9WjLXkqixrkUBvgAkKxjV8DmIZX5uj54UCgDe8ijP1LIn=s288-c-no",
+  "citySectionTitle": "The Big City I Would Like to Visit",
+  "cityDescription": "The big city I would like to visit is Tokyo. There are several reasons why I would like to visit Tokyo. Firstly, I am fascinated by the seamless blend of traditional and modern elements that define this city. From ancient temples to cutting-edge technology, Tokyo offers a remarkable contrast that I find intriguing. Additionally, I am drawn to Japanese culture, art, and cuisine, and Tokyo serves as a hub for all these aspects. Exploring the city's vibrant neighborhoods, trying authentic Japanese dishes, and experiencing the warmth and hospitality of the Japanese people are all factors that contribute to my desire to visit Tokyo.",
+  "cityImage": "https://t3.ftcdn.net/jpg/02/65/23/70/360_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.webp",
+  "cityName": "Tokyo",
+  "languageSectionTitle": "Mandarin Language Phrases",
+  "languageDescription": "Here are some common Mandarin phrases:",
+  "languageName": "Mandarin",
+  "languageCode": "zh",
+  "english": "English",
+  "hello": "Hello",
+  "helloTranslation": "Nǐ hǎo 你好",
+  "thankYou": "Thank You",
+  "thankYouTranslation": "Xièxiè 谢谢",
+  "goodbye": "Goodbye",
+  "goodbyeTranslation": "Zàijiàn 再见",
+  "subjectsSectionTitle": "My Favorite Subjects",
+  "degree": "Bachelor of Commerce Information Management",
+  "subjects": [
+    {
+      "title": "Engineering Business Systems for 4IR",
+      "description": "An in-depth study of business systems and their integration with emerging 4th Industrial Revolution technologies.",
+      "image": "images/640x360.jpg"
+    },
+    {
+      "title": "Full Stack Web Development",
+      "description": "A comprehensive course on developing web applications from front-end to back-end using modern technologies.",
+      "image": "images/1049-640x360.jpg"
+    },
+    {
+      "title": "4IR Technologies Bootcamp",
+      "description": "An intensive bootcamp focused on 4th Industrial Revolution technologies such as AI, IoT, and blockchain.",
+      "image": "images/65535_53551865901_1f65a794eb_z_640_360_nofilter.jpg"
+    }
+  ]
+}

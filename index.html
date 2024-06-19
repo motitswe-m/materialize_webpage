@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{pageTitle}}</title>
+    <style>
+      /* General styles */
+      body {
+          font-family: {{bodyFont}}, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: url('{{backgroundImageUrl}}') no-repeat center center fixed;
+          background-size: cover;
+          color: {{textColor}};
+          text-align : center;
+      }
+
+      h1 {
+          margin-top: 50px;
+          font-size: 3em;
+          color: {{headerColor}};
+      }
+
+      .header {
+          font-family: {{headerFont}}, sans-serif;
+          font-size: 2.5em;
+          margin-top: 20px;
+          color: {{highlightColor}};
+      }
+
+      section {
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 20px;
+          margin: 20px auto;
+          border-radius: 10px;
+          width: 80%;
+          max-width: 800px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      h2 {
+          color: {{highlightColor}};
+          font-family: {{headerFont}}, sans-serif;
+      }
+
+      .intro-photo {
+          border-radius: 50%;
+          border: 3px solid {{highlightColor}};
+          float: left;
+          margin-right: 20px;
+      }
+
+      .city-photo {
+          border-radius: 50%;
+          border: 3px solid {{highlightColor}};
+      }
+
+      p, table {
+          text-align: left;
+          margin: 20px auto;
+          max-width: 600px;
+      }
+
+      table {
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.8);
+          color: {{tableTextColor}};
+          border-collapse: collapse;
+      }
+
+      th, td {
+          border: 1px solid {{highlightColor}};
+          padding: 10px;
+      }
+
+      th {
+          background-color: {{highlightColor}};
+          color: {{tableHeaderColor}};
+      }
+
+      .subjects-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+      }
+
+      .subject {
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 10px;
+          padding: 15px;
+          width: 250px;
+          text-align: center;
+          color: {{subjectTextColor}};
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .subject img {
+          border-radius: 10px;
+      }
+
+      .subject h4 {
+          color: {{subjectTextColor}};
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+          h1 {
+              font-size: 2.5em;
+              margin-top: 30px;
+          }
+
+          .header {
+              font-size: 2em;
+          }
+
+          section {
+              width: 90%;
+          }
+
+          .subjects-container {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          .subject {
+              width: 90%;
+          }
+
+          p, table {
+              max-width: 100%;
+          }
+      }
+
+      @media (max-width: 480px) {
+          h1 {
+              font-size: 2em;
+              margin-top: 20px;
+          }
+
+          .header {
+              font-size: 1.5em;
+          }
+
+          section {
+              width: 95%;
+          }
+
+          .subject {
+              width: 100%;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    {{title}}
+    <h1>{{header}}</h1>
+
+    <section id="intro">
+      <h2>{{name}}</h2>
+      <img
+        src="{{introImage}}"
+        alt="{{name}}"
+        class="intro-photo"
+        width="150"
+      />
+    </section>
+
+    <section id="which-city">
+      <h2>{{citySectionTitle}}</h2>
+      <p>{{cityDescription}}</p>
+      <img
+        src="{{cityImage}}"
+        alt="{{cityName}}"
+        class="city-photo"
+        width="150"
+      />
+    </section>
+
+    <section id="foreign-language">
+      <h2>{{languageSectionTitle}}</h2>
+      <p>{{languageDescription}}</p>
+      <p>{{languageName}}: [{{languageCode}}]</p>
+      <table>
+        <tr>
+          <th>{{english}}</th>
+          <th>{{languageName}}</th>
+        </tr>
+        <tr>
+          <td>{{hello}}</td>
+          <td>{{helloTranslation}}</td>
+        </tr>
+        <tr>
+          <td>{{thankYou}}</td>
+          <td>{{thankYouTranslation}}</td>
+        </tr>
+        <tr>
+          <td>{{goodbye}}</td>
+          <td>{{goodbyeTranslation}}</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="favorite-subjects">
+      <h2>{{subjectsSectionTitle}}</h2>
+      <p>{{degree}}</p>
+      <div class="subjects-container">
+        {{#each subjects}}
+        <div class="subject">
+          <h3>{{title}}</h3>
+          <img src="{{image}}" alt="{{title}}" width="140" />
+          <h4>{{description}}</h4>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+  </body>
+</html>
